@@ -41,7 +41,7 @@ const documentationFramework: { icon: string; framework: string }[] = [
   { framework: "Angular", icon: "/assets/images/angular.png" },
   { framework: "Nextjs", icon: "/assets/images/nextjs.png" },
 ];
-export function Navbar() {
+export default function Navbar() {
   return (
     <NavigationMenu viewport={false}>
       <NavigationMenuList>

@@ -1,14 +1,20 @@
 import React from "react";
-import { Navbar } from "./components/Navbar";
 import Image from "next/image";
+import Navbar from "./components/Navbar";
+import { Mail } from "lucide-react";
 
 const index = () => {
   return (
     <div>
       <div className="bg-gray-200 w-screen h-fit py-3 px-4 flex items-center justify-between">
-        <Navbar/>
+        <Navbar />
         <div className="flex items-center gap-3 justify-center">
-          <p className="text-nowrap text-[14px] cursor-default">Ramel Panis Jr.</p>
+          <div className="flex ">
+            <Mail className="w-[15px] h-[15px]" />
+            <p className="text-nowrap text-[14px] cursor-default">
+              ramelopanisjr.06@gmail.com
+            </p>
+          </div>
           <div className="relative w-[30px] h-[30px]">
             <Image
               src={"/assets/images/profile.png"}
